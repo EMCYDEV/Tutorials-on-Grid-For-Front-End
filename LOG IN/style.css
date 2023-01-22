@@ -1,0 +1,53 @@
+:root {
+    --clr-primary: #651fff;
+    --clr-gray: #37474f;
+    --clr-gray-light: #b0bec5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(bg-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+label {
+    display: block;
+}
+
+input {
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid blue;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 16px;
+    color: white;
+}
+
+.container .password {
+    margin-top: 4rem;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30rem);
+    border: 1px solid red;
+    justify-content: center;
+}
+
+.container {
+    box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
+    background-color: white;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
