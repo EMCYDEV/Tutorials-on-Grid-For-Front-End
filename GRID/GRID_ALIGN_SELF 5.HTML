@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .wrapper>div {
+            background: #ddd;
+            padding: 1em;
+        }
+        
+        .wrapper>div:nth-child(odd) {
+            background: #eee;
+        }
+        
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-auto-rows: minmax(100px, auto);
+            grid-gap: 1em;
+            /*This works on columns grid*/
+            /* start, end, center stretch */
+            /* justify-items: stretch; */
+            /*This works on Rows Grid*/
+            /* start, end, center stretch */
+            /* align-items: start; */
+        }
+        
+        .box1 {
+            align-self: start;
+        }
+        
+        .box2 {
+            align-self: end;
+        }
+        
+        .box3 {
+            justify-self: end;
+        }
+        
+        .box4 {
+            justify-self: center;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="box box1">
+            Box1
+        </div>
+        <div class="box box2">
+            Box2
+        </div>
+        <div class="box box3">
+            Box3
+        </div>
+        <div class="box box4">
+            Box4
+        </div>
+    </div>
+</body>
+
+</html>
